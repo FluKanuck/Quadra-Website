@@ -1,0 +1,119 @@
+<!--meta {"path":"/","fullTitle":"Quadra Utility Locating | Private Utility and Line Locating BC","title":"Home","description":"Private utility locating across BC since 2012. EM and GPR locating, concrete scanning, camera inspection and surveying. COR certified. Request a quote.","h1":"Know what's below.","hero":"gpr"} -->
+<section class="page-hero hero-home">
+  <x-img name="gpr" sizes="100vw" eager decorative>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="kicker">Private utility locating · British Columbia · Since 2012</p>
+      <h1>Know what's below.</h1>
+      <p class="lede">The private locator BC's engineers, builders and pipeline crews call back. EM and GPR locating, utility surveying, concrete scanning and camera inspection.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="/request-a-quote">Request a quote</a>
+        <a class="btn btn-outline" href="tel:{{site.phoneHref}}">Call {{site.phone}}</a>
+      </div>
+      <dl class="stats">
+        <div><dt>Locating in BC since</dt><dd>2012</dd></div>
+        <div><dt>Locates completed</dt><dd>1,000s</dd></div>
+        <div><dt>Certified safety program</dt><dd>COR</dd></div>
+      </dl>
+    </div>
+    <form class="quote-card hero-form" id="quick-quote" action="{{formAction}}" method="POST" data-form data-next="/quote-thank-you"{{formDemo}} aria-labelledby="quick-quote-title">
+      <h2 id="quick-quote-title">Get a quote</h2>
+      <p>Send the site and scope. We'll come back with an estimate.</p>
+      <input type="hidden" name="form" value="Quick quote (home page)">
+      <x-include src="form-hidden" fid="qq">
+      <div class="field">
+        <label for="qq-name">Name <span aria-hidden="true">*</span></label>
+        <input type="text" id="qq-name" name="name" autocomplete="name" enterkeyhint="next" required data-error="qq-name-error">
+        <p id="qq-name-error" class="error-msg">Error: enter your name.</p>
+      </div>
+      <div class="field">
+        <label for="qq-email">Email <span aria-hidden="true">*</span></label>
+        <input type="email" id="qq-email" name="email" inputmode="email" autocomplete="email" autocapitalize="none" spellcheck="false" enterkeyhint="next" required data-error="qq-email-error">
+        <p id="qq-email-error" class="error-msg">Error: enter an email address like name@example.com.</p>
+      </div>
+      <div class="field">
+        <label for="qq-phone">Phone</label>
+        <input type="tel" id="qq-phone" name="phone" autocomplete="tel" enterkeyhint="next">
+      </div>
+      <div class="field">
+        <label for="qq-site">Site address <span aria-hidden="true">*</span></label>
+        <input type="text" id="qq-site" name="site_address" enterkeyhint="next" required data-error="qq-site-error">
+        <p id="qq-site-error" class="error-msg">Error: enter the address of the site.</p>
+      </div>
+      <div class="field">
+        <label for="qq-service">What do you need?</label>
+        <select id="qq-service" name="service"><x-block name="service-options"></select>
+      </div>
+      <button class="btn btn-navy" type="submit">Send request</button>
+      <p>Fields marked * are required. We're a private locator, not BC 1 Call. For the free BC 1 Call service, go to <a href="https://www.bc1c.ca" rel="noopener">bc1c.ca</a>.</p>
+    </form>
+  </div>
+</section>
+
+<div class="strip"><div class="wrap"><ul role="list"><li>COR certified</li><li>BC CGA member</li><li>BC 1 Call member</li><li>BCCSA member</li><li>Crews across BC</li></ul></div></div>
+
+<div class="clients">
+  <div class="wrap">
+    <p class="kicker" id="clients-label">Trusted on projects for</p>
+    <ul role="list" aria-labelledby="clients-label"><li>Trans Mountain</li><li>Enbridge</li><li>Suncor</li><li>GeoVerra</li><li>PGL</li></ul>
+  </div>
+</div>
+
+<section class="section" id="services">
+  <div class="wrap">
+    <p class="kicker kicker-blue">What we do</p>
+    <h2 class="display">Services</h2>
+    <ul class="card-grid" role="list"><x-block name="service-cards"></ul>
+  </div>
+</section>
+
+<section class="testimonial reveal">
+  <x-img name="worker" sizes="(min-width: 60em) 45vw, 100vw">
+  <div class="testimonial-copy">
+    <h2 class="visually-hidden">What clients say</h2>
+    <figure class="quote quote-lead"><blockquote><p>“Our firm uses Quadra’s line locating services for large and small projects and we have always been satisfied with the results.”</p></blockquote><figcaption>Andrew Slater, Project Manager, GeoVerra</figcaption></figure>
+    <div class="quote-stack">
+      <figure class="quote"><blockquote><p>“We can always count on responsive service and quality work!”</p></blockquote><figcaption>Jordan Huppee, Project Manager, GeoVerra Inc.</figcaption></figure>
+      <figure class="quote"><blockquote><p>“Quadra has carried out utility locates for various project sites for many years with professionalism and high standard of care.”</p></blockquote><figcaption>Melissa LaBar, Environmental Consultant, PGL</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="safety">
+  <div class="wrap safety">
+    <div class="safety-intro">
+      <p class="kicker kicker-blue">Safety and standards</p>
+      <h2 class="display">Pre-qual ready.</h2>
+      <p>COR certified, with active memberships in BC Common Ground Alliance, BC 1 Call and BC Construction Safety Alliance. Safety documentation is available on request for your pre-qualification package.</p>
+      <p><a href="/about-us#safety">Certifications and memberships</a></p>
+    </div>
+    <ul role="list">
+      <li><span class="kicker">Certified</span><strong>COR</strong><span>Certificate of Recognition safety program.</span></li>
+      <li><span class="kicker">Member</span><strong>BC Common Ground Alliance</strong><span>Active member.</span></li>
+      <li><span class="kicker">Member</span><strong>BC 1 Call</strong><span>Active member.</span></li>
+      <li><span class="kicker">Member</span><strong>BC Construction Safety Alliance</strong><span>Active member.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section section-tight">
+  <div class="wrap">
+    <h2 class="display">How it works</h2>
+    <x-include src="steps">
+  </div>
+</section>
+
+<section class="section section-tight">
+  <div class="wrap area">
+    <div>
+      <h2 class="display">Across BC</h2>
+      <ul class="chips" role="list"><li>Metro Vancouver</li><li>Fraser Valley</li><li>Sea to Sky</li><li>Vancouver Island</li><li>Victoria</li><li>Kelowna</li><li>Kamloops</li><li>Kootenays</li></ul>
+      <x-include src="not-bc1">
+    </div>
+    <div class="cta-box">
+      <h2 class="display">Digging soon?</h2>
+      <p>Send the address and scope. We'll come back with an estimate.</p>
+      <a class="btn btn-dark" href="/request-a-quote">Request a quote</a>
+    </div>
+  </div>
+</section>

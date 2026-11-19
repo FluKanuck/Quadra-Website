@@ -1,0 +1,232 @@
+{
+ "gpr": {
+  "w": 1600,
+  "h": 1067,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "alt": "Quadra technician pushing a ground penetrating radar cart along a residential street"
+ },
+ "worker": {
+  "w": 1600,
+  "h": 1067,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "alt": "Quadra technician kneeling at a utility access point with an EM locator"
+ },
+ "locators": {
+  "w": 1600,
+  "h": 1067,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "alt": "Two Quadra locators working at a manhole with GPR and locating equipment"
+ },
+ "em": {
+  "w": 1600,
+  "h": 1067,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "alt": "Quadra technician tracing a line with an EM receiver beside a work truck"
+ },
+ "surveying": {
+  "w": 1200,
+  "h": 1800,
+  "widths": [
+   480,
+   800,
+   1200
+  ],
+  "alt": "Quadra surveyor using a total station on a tripod beside a city street"
+ },
+ "oilgas": {
+  "w": 1200,
+  "h": 1600,
+  "widths": [
+   480,
+   800,
+   1200
+  ],
+  "alt": "Pipeline right-of-way marked with yellow flags, with crew and equipment in the field"
+ },
+ "concrete": {
+  "w": 1200,
+  "h": 1800,
+  "widths": [
+   480,
+   800,
+   1200
+  ],
+  "alt": "Technician scanning a concrete floor with a handheld GPR unit"
+ },
+ "camera": {
+  "w": 1200,
+  "h": 1800,
+  "widths": [
+   480,
+   800,
+   1200
+  ],
+  "alt": "Quadra technician feeding a push camera into a manhole"
+ },
+ "oiltank": {
+  "w": 1600,
+  "h": 1200,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "alt": "Pink paint marks on pavement showing the outline and depth of a buried oil tank"
+ },
+ "survey-equipment": {
+  "w": 1600,
+  "h": 1067,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "alt": "Two Quadra surveyors with GPS and total station equipment on a road"
+ },
+ "work-truck": {
+  "w": 1600,
+  "h": 1067,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "alt": "Quadra work truck with a technician checking a tablet beside it"
+ },
+ "truck": {
+  "w": 1600,
+  "h": 1067,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "alt": "Quadra locator standing beside a Quadra truck with equipment drawers open"
+ },
+ "team": {
+  "w": 1600,
+  "h": 1067,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "alt": "Quadra crew member in a Quadra pickup truck"
+ },
+ "coring": {
+  "w": 1024,
+  "h": 1096,
+  "widths": [
+   480,
+   800,
+   1024
+  ],
+  "alt": "Quadra technician running a concrete coring drill behind a Quadra van"
+ },
+ "residential": {
+  "w": 1600,
+  "h": 1143,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "alt": "Aerial view of a house with underground utility lines drawn across the yard"
+ },
+ "vaporpin": {
+  "w": 1000,
+  "h": 667,
+  "widths": [
+   480,
+   800,
+   1000
+  ],
+  "alt": "VAPOR PIN installation"
+ },
+ "hs-jesse": {
+  "w": 480,
+  "h": 480,
+  "widths": [
+   240,
+   480
+  ]
+ },
+ "hs-adam": {
+  "w": 480,
+  "h": 480,
+  "widths": [
+   240,
+   480
+  ]
+ },
+ "hs-angie": {
+  "w": 480,
+  "h": 480,
+  "widths": [
+   240,
+   480
+  ]
+ },
+ "hs-randy": {
+  "w": 480,
+  "h": 480,
+  "widths": [
+   240,
+   480
+  ]
+ },
+ "hs-jamie": {
+  "w": 480,
+  "h": 480,
+  "widths": [
+   240,
+   480
+  ]
+ },
+ "acc-bccga": {
+  "w": 320,
+  "h": 320
+ },
+ "acc-bc1call": {
+  "w": 320,
+  "h": 320
+ },
+ "acc-bccsa": {
+  "w": 320,
+  "h": 320
+ },
+ "logo-light": {
+  "w": 720,
+  "h": 296
+ },
+ "logo-dark": {
+  "w": 720,
+  "h": 296
+ }
+}

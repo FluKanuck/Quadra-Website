@@ -1,0 +1,22 @@
+# Security and caching headers. Read by Cloudflare Pages and Netlify.
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: accelerometer=(), camera=(), geolocation=(), microphone=(), focus-without-user-activation=()
+  X-Frame-Options: DENY
+  Cross-Origin-Opener-Policy: same-origin-allow-popups
+  # Start short. Raise to max-age=31536000; includeSubDomains once the site has run cleanly on HTTPS.
+  Strict-Transport-Security: max-age=300
+  # Enforced now: directives that cannot break the Google tag.
+  Content-Security-Policy: object-src 'none'; base-uri 'none'; frame-ancestors 'none'
+  # Trial of the stricter policy. Watch the browser console for reports, then move it to the enforced header.
+  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' 'inline-speculation-rules' https://www.googletagmanager.com 'report-sample'; style-src 'self'; img-src 'self' data: https://*.google-analytics.com https://*.googletagmanager.com https://*.google.com https://*.google.ca https://*.doubleclick.net https://googleads.g.doubleclick.net; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.google.com https://*.doubleclick.net https://www.googleadservices.com; frame-src https://td.doubleclick.net https://www.googletagmanager.com; font-src 'self'; form-action 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'
+
+/css/*
+  Cache-Control: public, max-age=31536000, immutable
+/js/*
+  Cache-Control: public, max-age=31536000, immutable
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+/img/*
+  Cache-Control: public, max-age=2592000

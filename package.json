@@ -1,0 +1,10 @@
+{
+  "name": "quadra-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "preview": "node build.mjs && node tools/preview.mjs",
+    "check": "npx -y modern-web-guidance@latest legacy-scan src"
+  }
+}

@@ -1,0 +1,180 @@
+[
+  {
+    "slug": "utility-locating",
+    "name": "Utility locating",
+    "image": "locators",
+    "short": "Public and private underground utilities, found with EM locators and GPR and marked on the ground.",
+    "title": "Private Utility Locating in BC | EM and GPR",
+    "description": "Private utility locating across BC with EM locators and ground penetrating radar. Lines marked on site, with a digital locate report before we leave.",
+    "lead": "We find and mark the underground utilities on your site, public and private, using electromagnetic locators and ground penetrating radar.",
+    "body": [
+      "Existing maps and drawings are not always reliable. Buildings get upgraded, drawings get lost, and records fall behind. We often find old, abandoned or even new underground lines that are not on any property map.",
+      "Our locators rely on two non-destructive methods to complete a locate: electromagnetic (EM) locators and ground penetrating radar (GPR). Using both gives a fuller picture of what is under the site than either one alone.",
+      "When the locate is done you get a digital locate report with all of our findings before we leave site. No waiting on an over-engineered report that adds cost to your project."
+    ],
+    "uses": [
+      "Home renovations, fences, decks and landscaping",
+      "Environmental drilling projects",
+      "Construction builds and excavation",
+      "New conduit trenches"
+    ],
+    "equipment": [
+      "Electromagnetic (EM) locators for metallic pipes and cables",
+      "Ground penetrating radar (GPR) for non-metallic lines"
+    ]
+  },
+  {
+    "slug": "utility-surveying",
+    "name": "Utility surveying",
+    "image": "surveying",
+    "short": "Survey-grade maps of located utilities with GPS-RTK or a robotic total station, delivered in CAD.",
+    "title": "Utility Surveying in BC | GPS-RTK and Total Station",
+    "description": "Survey-grade mapping of located utilities with GPS-RTK and a robotic total station. Topographic and site features captured and delivered in CAD.",
+    "lead": "Once the underground lines are located, we can map them. Survey-grade, with GPS-RTK or a robotic total station.",
+    "body": [
+      "We work with you to capture the other details you need on the same visit, such as a topographic survey, a power line survey or key building features.",
+      "GPS-RTK gives near-centimetre accuracy with quick data collection. The data can be overlaid on an existing CAD plan or an orthographic photo, and tied to sea level or a local coordinate system.",
+      "Where satellite coverage is blocked, a single technician can run our robotic total station to capture specific points accurately and tie into your existing site information.",
+      "All survey data is provided in CAD format, with the processed data and information in an engineered report."
+    ],
+    "uses": [
+      "Mapping located utilities onto site plans",
+      "Topographic surveys",
+      "Power line surveys",
+      "Capturing building and above-ground features"
+    ],
+    "equipment": [
+      "GPS-RTK",
+      "Spectra 80 robotic total station"
+    ]
+  },
+  {
+    "slug": "oil-gas-pipeline-projects",
+    "name": "Oil and gas pipeline projects",
+    "image": "oilgas",
+    "short": "Site inspection and monitoring, right-of-way sweeps and route planning for pipeline companies.",
+    "title": "Pipeline Locating and Inspection in BC | Oil and Gas",
+    "description": "Site inspection and monitoring, right-of-way sweeping and route planning for oil and gas pipeline companies across BC, in urban and remote areas.",
+    "lead": "We work with oil and gas pipeline companies across British Columbia, in urban and remote areas.",
+    "body": [
+      "Our trained, certified and experienced locators provide a range of services on pipeline projects, from site inspection and monitoring to right-of-way sweeping and route planning.",
+      "Trusted by companies such as Trans Mountain, Suncor and Enbridge."
+    ],
+    "uses": [
+      "Site inspection and monitoring",
+      "Right-of-way sweeping",
+      "Route planning"
+    ]
+  },
+  {
+    "slug": "concrete-scanning",
+    "name": "Concrete scanning",
+    "image": "concrete",
+    "short": "Rebar, conduits and post-tension cables found in the slab before you core or cut.",
+    "title": "Concrete Scanning in BC | GPR and Ferroscan",
+    "description": "Concrete scanning with high-frequency GPR and Ferroscan. Find rebar, conduits and post-tension cables in new or old slabs before coring or cutting.",
+    "lead": "Concrete scanning shows the rebar, conduits and post-tension cables inside a slab before anyone cores or cuts into it.",
+    "body": [
+      "We scan with high-frequency GPR (1,000 MHz) and Ferroscan. The data is collected in grid-pattern line scans to map anomalies in the slab. It works on new construction and on older slabs.",
+      "Ferroscan covers large areas of concrete quickly. It measures depth of cover over reinforcement at depths of up to 4 in (100 mm) and shows a clear 2D image of the rebar on the monitor on the spot.",
+      "Quadra operates a fleet of concrete scanning equipment for residential and commercial developments, bridge work and sub-slab assessment projects."
+    ],
+    "uses": [
+      "Choosing the location for soil-vapour probes",
+      "Clearing core locations before concrete coring",
+      "Rebar mapping a slab",
+      "Finding conduits within a concrete pour",
+      "Locating post-tension cables"
+    ],
+    "equipment": [
+      "High-frequency concrete scanning GPR (1,000 MHz)",
+      "Ferroscan"
+    ],
+    "note": "Bundle scanning with our <a href=\"/services/concrete-coring\">concrete coring</a> or <a href=\"/services/vapor-pin-installation\">VAPOR PIN® installation</a> to save time on site."
+  },
+  {
+    "slug": "concrete-coring",
+    "name": "Concrete coring",
+    "image": "coring",
+    "short": "Core openings through concrete slabs so drill rigs can reach the ground underneath.",
+    "title": "Concrete Coring in BC | Drill Rig Access Through Slabs",
+    "description": "Concrete coring for drill rig access through slabs on environmental drilling projects and subsurface investigations. Bundle with concrete scanning.",
+    "lead": "We cut core openings through concrete slabs so drill rigs can reach the ground underneath.",
+    "body": [
+      "Coring gives environmental drilling projects and subsurface investigations the access they need without breaking out the slab.",
+      "If you bundle coring with our concrete scanning, the slab is scanned and cored in one workflow. That saves time and money on your budget."
+    ],
+    "uses": [
+      "Environmental drilling projects",
+      "Subsurface investigations"
+    ],
+    "note": "Pair with <a href=\"/services/concrete-scanning\">concrete scanning</a> so every core location is cleared first."
+  },
+  {
+    "slug": "vapor-pin-installation",
+    "name": "VAPOR PIN® installation",
+    "image": "vaporpin",
+    "hero": "concrete",
+    "short": "Sub-slab vapour probe installation for soil gas surveys and vapour intrusion assessments.",
+    "title": "VAPOR PIN® Installation in BC | Sub-Slab Vapour Probes",
+    "description": "VAPOR PIN® sampling device installation for sub-slab vapour probes, soil gas surveys and vapour intrusion assessments. Bundle with concrete scanning.",
+    "lead": "We install VAPOR PIN® sampling devices for sub-slab vapour probes, for soil gas surveys and vapour intrusion assessments.",
+    "body": [
+      "The VAPOR PIN® sampling device gives a minimally invasive way to measure subsurface vapour concentrations for environmental site assessments and mitigation design.",
+      "The design of the device allows for quick installation and reliable data collection, which cuts project time and cost.",
+      "If you bundle sub-slab vapour probe installation with our concrete scanning, the slab is scanned and the probes go in on one visit."
+    ],
+    "uses": [
+      "Soil gas surveys",
+      "Vapour intrusion assessments",
+      "Environmental site assessments and mitigation design"
+    ],
+    "note": "Pair with <a href=\"/services/concrete-scanning\">concrete scanning</a> to clear each probe location first."
+  },
+  {
+    "slug": "camera-pipe-inspection",
+    "name": "Camera pipe inspection",
+    "image": "camera",
+    "short": "High-definition video inspection of pipes, conduits, manholes, vaults and voids.",
+    "title": "Camera Pipe Inspection in BC | Video Pipe Inspection",
+    "description": "Video inspection of pipes, conduits, manhole chambers, vaults and subsurface voids. High-definition footage and a report before we leave the field.",
+    "lead": "If your project needs video inspection, we can get eyes into tight spaces.",
+    "body": [
+      "Camera pipe inspections are more and more often required by municipalities and contractors, before and after construction.",
+      "Whether you have a pipe blockage, need to check the integrity of drainage pipes in a new warehouse build, or need an inspection of manhole chambers, vaults or subsurface voids, we can inspect it and provide high-quality video footage.",
+      "Our pushrod inspection system collects high-definition footage of any conduit or pipe. We can share the captured footage and the report before we leave the field."
+    ],
+    "uses": [
+      "Pre- and post-construction inspections",
+      "Pipe blockages",
+      "Checking installation quality on new drainage systems",
+      "Manhole chambers, vaults and subsurface voids"
+    ],
+    "equipment": [
+      "flexiprobe P540c pushrod inspection system"
+    ]
+  },
+  {
+    "slug": "oil-tank-locating",
+    "name": "Oil tank locating",
+    "image": "oiltank",
+    "short": "Buried heating oil tanks and other underground storage tanks, with a report for real estate sales.",
+    "title": "Oil Tank Locating in BC | Buried Tank Scans",
+    "description": "Locating buried residential heating oil tanks and other underground storage tanks with EM locators and GPR. Findings report for real estate sales.",
+    "lead": "We locate buried tanks and other buried objects with electromagnetic locators and ground penetrating radar.",
+    "body": [
+      "That covers underground storage tanks such as residential heating oil tanks and gas station gasoline or diesel tanks, through to buried debris at a dumpsite.",
+      "For real estate sales, we provide a report of our findings to help with the sale or purchase of a home or property."
+    ],
+    "uses": [
+      "Buying or selling a home",
+      "Residential heating oil tanks",
+      "Gas station gasoline and diesel tanks",
+      "Buried debris"
+    ],
+    "equipment": [
+      "Electromagnetic (EM) locators",
+      "Ground penetrating radar (GPR)"
+    ]
+  }
+]

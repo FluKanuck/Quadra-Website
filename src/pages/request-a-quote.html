@@ -1,0 +1,93 @@
+<!--meta {"path":"/request-a-quote","title":"Request a Quote","description":"Request a quote from Quadra Utility Locating for utility locating, GPR, concrete scanning, coring, camera inspection, surveying or oil tank locating in BC.","h1":"Request a quote","nav":"Request a quote"} -->
+<section class="section section-first">
+  <div class="wrap">
+    <p class="kicker">Estimates</p>
+    <h1 class="display">Request a quote</h1>
+    <p class="lede">Tell us about the site and the work. Our team gets back to you within 2 business days. Most requests get a reply the same business day.</p>
+    <x-include src="not-bc1">
+    <form class="form" action="{{formAction}}" method="POST" enctype="multipart/form-data" data-form data-next="/quote-thank-you"{{formDemo}} aria-labelledby="rq-contact-title">
+      <p class="required-key">Fields marked * are required.</p>
+      <input type="hidden" name="form" value="Request a quote">
+      <x-include src="form-hidden" fid="rq">
+
+      <h2 id="rq-contact-title">Your contact details</h2>
+      <div class="field">
+        <label for="rq-name">Name <span aria-hidden="true">*</span></label>
+        <input type="text" id="rq-name" name="name" autocomplete="name" enterkeyhint="next" required data-error="rq-name-error">
+        <p id="rq-name-error" class="error-msg">Error: enter your name.</p>
+      </div>
+      <div class="field">
+        <label for="rq-company">Company</label>
+        <input type="text" id="rq-company" name="company" autocomplete="organization" enterkeyhint="next">
+      </div>
+      <div class="field">
+        <label for="rq-email">Email <span aria-hidden="true">*</span></label>
+        <input type="email" id="rq-email" name="email" inputmode="email" autocomplete="email" autocapitalize="none" spellcheck="false" enterkeyhint="next" required data-error="rq-email-error">
+        <p id="rq-email-error" class="error-msg">Error: enter an email address like name@example.com.</p>
+      </div>
+      <div class="field">
+        <label for="rq-phone">Phone</label>
+        <span class="hint" id="rq-phone-hint">Used only if we need to ask about the site or scope.</span>
+        <input type="tel" id="rq-phone" name="phone" autocomplete="tel" enterkeyhint="next" aria-describedby="rq-phone-hint">
+      </div>
+      <div class="field">
+        <label for="rq-address">Your address <span aria-hidden="true">*</span></label>
+        <span class="hint" id="rq-address-hint">Billing or mailing address for the estimate.</span>
+        <textarea id="rq-address" name="client_address" autocomplete="street-address" required aria-describedby="rq-address-hint" data-error="rq-address-error"></textarea>
+        <p id="rq-address-error" class="error-msg">Error: enter your address.</p>
+      </div>
+
+      <h2>The job</h2>
+      <fieldset data-require-one>
+        <legend>Which services would you like a quote for? <span aria-hidden="true">*</span></legend>
+        <span class="hint">Select all that apply.</span>
+        <label class="choice"><input type="checkbox" name="services" value="Utility location, no GPR" data-error="rq-services-error"> Utility location, no GPR (only looking for gas, power, or anything metal)</label>
+        <label class="choice"><input type="checkbox" name="services" value="Utility location, with GPR"> Utility location, with GPR (looking for everything)</label>
+        <label class="choice"><input type="checkbox" name="services" value="Surveying"> Surveying (with AutoCAD drawing)</label>
+        <label class="choice"><input type="checkbox" name="services" value="Oil and gas pipeline project"> Oil and gas pipeline project</label>
+        <label class="choice"><input type="checkbox" name="services" value="Concrete scanning"> Concrete scanning</label>
+        <label class="choice"><input type="checkbox" name="services" value="Camera pipe inspection"> Camera pipe inspection</label>
+        <label class="choice"><input type="checkbox" name="services" value="Oil tank locating"> Oil tank locating</label>
+        <label class="choice"><input type="checkbox" name="services" value="Concrete coring"> Concrete coring</label>
+        <label class="choice"><input type="checkbox" name="services" value="Sub-slab vapour probe installation"> Sub-slab vapour probe installation</label>
+        <p id="rq-services-error" class="error-msg">Error: select at least one service.</p>
+      </fieldset>
+      <div class="field">
+        <label for="rq-scope">Scope of work <span aria-hidden="true">*</span></label>
+        <span class="hint" id="rq-scope-hint">Explain what you would like us to do. For example: number of locations, whether there is concrete scanning inside a building, whether roadwork will need traffic control.</span>
+        <textarea id="rq-scope" name="scope" required aria-describedby="rq-scope-hint" data-error="rq-scope-error"></textarea>
+        <p id="rq-scope-error" class="error-msg">Error: describe the work you need done.</p>
+      </div>
+      <fieldset>
+        <legend>Would you like Quadra to prepare the BC 1 Call package on your behalf, at a cost? <span aria-hidden="true">*</span></legend>
+        <span class="hint">Any job we undertake must have a valid BC 1 Call, whether on private or public property, and if needed, Shaw and Metro Vancouver calls. If you are providing this documentation, it must be supplied to us in advance of the job or be available on site.</span>
+        <div class="choice-row">
+          <label class="choice"><input type="radio" name="bc1call_package" value="Yes" required data-error="rq-bc1-error"> Yes</label>
+          <label class="choice"><input type="radio" name="bc1call_package" value="No" required> No</label>
+        </div>
+        <p id="rq-bc1-error" class="error-msg">Error: choose yes or no.</p>
+      </fieldset>
+      <div class="field">
+        <label for="rq-date">Date requested on site</label>
+        <span class="hint" id="rq-date-hint">We will do our best to meet your preferred date, but may need to suggest another.</span>
+        <input type="date" id="rq-date" name="date_requested" aria-describedby="rq-date-hint">
+      </div>
+      <div class="field">
+        <label for="rq-site">Site address</label>
+        <textarea id="rq-site" name="site_address"></textarea>
+      </div>
+      <div class="field">
+        <label for="rq-gps">GPS coordinates of site</label>
+        <span class="hint" id="rq-gps-hint">Only if no address is available. These can be found on Google Maps.</span>
+        <input type="text" id="rq-gps" name="gps" aria-describedby="rq-gps-hint">
+      </div>
+      <div class="field">
+        <label for="rq-file">Map or drawing outlining the work area</label>
+        <span class="hint" id="rq-file-hint">One file, 15 MB limit. It helps us scope the job the first time.</span>
+        <input type="file" id="rq-file" name="drawing" aria-describedby="rq-file-hint">
+      </div>
+      <button class="btn btn-primary" type="submit">Submit request</button>
+      <p class="hint">We use these details only to prepare your estimate. See our <a href="/privacy-policy.pdf">privacy policy</a>.</p>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-CA"{{htmlAttrs}}>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{fullTitle}}</title>
+<meta name="description" content="{{description}}">
+<meta name="color-scheme" content="dark">
+<meta name="text-scale" content="scale">
+<meta name="theme-color" content="#0b1626">
+<link rel="canonical" href="{{canonical}}">
+{{robots}}
+<link rel="preload" href="/fonts/oswald-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/lato-400.woff2" as="font" type="font/woff2" crossorigin>
+{{preloadHero}}
+<link rel="stylesheet" href="{{css}}">
+<link rel="expect" href="#content" blocking="render">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{site.name}}">
+<meta property="og:title" content="{{fullTitle}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:image" content="{{shareImage}}">
+<meta name="twitter:card" content="summary_large_image">
+<script type="speculationrules">
+{"prefetch":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/*.pdf"}}]},"eagerness":"moderate"}]}
+</script>
+<script src="{{js}}" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","@id":"{{site.url}}/#org","name":"{{site.name}}","legalName":"{{site.legalName}}","url":"{{site.url}}","logo":"{{site.url}}/icon-512.png","image":"{{shareImage}}","telephone":"{{site.phoneHref}}","email":"{{site.email}}","foundingDate":"2012","address":{"@type":"PostalAddress","streetAddress":"{{site.street}}","addressLocality":"{{site.city}}","addressRegion":"{{site.region}}","postalCode":"{{site.postal}}","addressCountry":"CA"},"areaServed":{"@type":"AdministrativeArea","name":"British Columbia"}}</script>
+{{jsonld}}
+</head>
+<body>
+<a href="#content" class="skip-link">Skip to main content</a>
+<header class="site-header">
+  <div class="header-inner wrap">
+    <a class="site-logo" href="/"><img src="/img/logo-light-360.webp" width="360" height="148" alt="Quadra Utility Locating, home"></a>
+    <nav class="site-nav" aria-label="Primary">
+      <button class="menu-button" type="button" popovertarget="site-menu" popovertargetaction="toggle" aria-controls="site-menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        <span>Menu</span>
+      </button>
+      <ul id="site-menu" class="site-menu" popover="auto">
+        <li><a href="/services" data-nav>Services</a></li>
+        <li><a href="/residential" data-nav>Residential</a></li>
+        <li><a href="/commercial" data-nav>Commercial</a></li>
+        <li><a href="/equipment" data-nav>Equipment</a></li>
+        <li><a href="/about-us" data-nav>About</a></li>
+        <li><a href="/careers" data-nav>Careers</a></li>
+        <li><a href="/bc1call" data-nav>BC 1 Call</a></li>
+        <li><a href="/contact" data-nav>Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-outline" href="tel:{{site.phoneHref}}">Call {{site.phone}}</a>
+      <a class="btn btn-primary" href="/request-a-quote">Request a quote</a>
+    </div>
+  </div>
+</header>
+{{breadcrumb}}
+<main id="content">
+{{content}}
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <img src="/img/logo-light-360.webp" width="360" height="148" alt="" loading="lazy">
+      <address>{{site.legalName}}<br>{{site.street}}<br>{{site.city}}, {{site.region}} {{site.postal}}</address>
+    </div>
+    <nav aria-label="Services">
+      <h2>Services</h2>
+      <ul><x-block name="service-links"></ul>
+    </nav>
+    <nav aria-label="Company">
+      <h2>Company</h2>
+      <ul>
+        <li><a href="/about-us">About us</a></li>
+        <li><a href="/equipment">Equipment</a></li>
+        <li><a href="/careers">Careers</a></li>
+        <li><a href="/residential">Residential</a></li>
+        <li><a href="/commercial">Commercial</a></li>
+        <li><a href="/bc1call">BC 1 Call vs private locates</a></li>
+        <li><a href="/privacy-policy.pdf">Privacy policy (PDF)</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h2>Contact</h2>
+      <ul>
+        <li><a href="tel:{{site.phoneHref}}">Toll free {{site.phone}}</a></li>
+        <li><a href="tel:{{site.phoneMetroHref}}">Metro Vancouver and Island {{site.phoneMetro}}</a></li>
+        <li><a href="tel:{{site.phoneInteriorHref}}">BC Interior {{site.phoneInterior}}</a></li>
+        <li><a href="mailto:{{site.email}}">{{site.email}}</a></li>
+        <li><a href="/request-a-quote">Request a quote</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap legal">
+    <p>© {{site.year}} {{site.legalName}}</p>
+    <p>We are a private locator, not BC 1 Call. BC 1 Call: <a href="https://www.bc1c.ca" rel="noopener">bc1c.ca</a></p>
+  </div>
+  <div class="bottom-bar">
+    <a href="tel:{{site.phoneHref}}">Call</a>
+    <a class="go" href="/request-a-quote">Request a quote</a>
+  </div>
+</footer>
+</body>
+</html>

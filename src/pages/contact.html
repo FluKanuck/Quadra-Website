@@ -1,0 +1,27 @@
+<!--meta {"path":"/contact","title":"Contact Quadra Utility Locating | Port Coquitlam, BC","description":"Contact Quadra Utility Locating. Toll free 1-866-554-8138. Head office in Port Coquitlam, with crews across Metro Vancouver, Vancouver Island and the BC Interior.","h1":"Contact us","nav":"Contact","hero":"team","kicker":"Get in touch","lead":"Call, email or send a quote request. Our team gets back to you within 2 business days."} -->
+<x-include src="hero">
+<section class="section">
+  <div class="wrap contact-grid">
+    <div class="panel">
+      <h2>Call or email</h2>
+      <dl class="contact-list">
+        <dt>Toll free</dt><dd><a href="tel:{{site.phoneHref}}">{{site.phone}}</a></dd>
+        <dt>Metro Vancouver and Vancouver Island</dt><dd><a href="tel:{{site.phoneMetroHref}}">{{site.phoneMetro}}</a></dd>
+        <dt>BC Interior</dt><dd><a href="tel:{{site.phoneInteriorHref}}">{{site.phoneInterior}}</a></dd>
+        <dt>Email</dt><dd><a href="mailto:{{site.email}}">{{site.email}}</a></dd>
+      </dl>
+    </div>
+    <div class="panel">
+      <h2>Head office</h2>
+      <address>{{site.legalName}}<br>{{site.street}}<br>{{site.city}}, {{site.region}} {{site.postal}}</address>
+      <h2>Request a quote</h2>
+      <p>Send the site address and scope and we'll come back with an estimate.</p>
+      <p><a class="btn btn-primary" href="/request-a-quote">Request a quote</a></p>
+    </div>
+    <div class="panel">
+      <h2>Careers</h2>
+      <p>Questions about working at Quadra? Email <a href="mailto:{{site.careersEmail}}">{{site.careersEmail}}</a> or see <a href="/careers">current opportunities</a>.</p>
+      <x-include src="not-bc1">
+    </div>
+  </div>
+</section>

@@ -1,0 +1,24 @@
+<x-include src="hero" kicker="Services">
+<section class="section">
+  <div class="wrap split">
+    <div class="prose">
+      {{bodyHtml}}
+      {{noteHtml}}
+    </div>
+    <aside class="side">
+      {{usesHtml}}
+      {{equipmentHtml}}
+    </aside>
+  </div>
+</section>
+<section class="section section-tight">
+  <div class="wrap">
+    <h2 class="display">How it works</h2>
+    <x-include src="steps">
+  </div>
+</section>
+<x-include src="cta">
+<nav class="section section-tight wrap next-link" aria-label="More services">
+  <a href="/services">All services</a>
+  <a href="/services/{{nextSlug}}">Next: {{nextName}}</a>
+</nav>

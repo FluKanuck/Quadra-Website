@@ -1,0 +1,78 @@
+<section class="section section-first">
+  <div class="wrap narrow">
+    <p class="kicker">Careers</p>
+    <h1 class="display">{{h1}}</h1>
+    <ul class="job-facts" role="list"><li>Lower Mainland, BC</li><li>Full time permanent</li><li>$44K – $88K per year</li></ul>
+    <div class="prose">
+      <h2>Job description</h2>
+      <p>{{intro}} As the leading utility locate provider in British Columbia, we work on the biggest, most demanding and most challenging projects. Our clients know we are the team that can provide them with fast, reliable and accurate service. Being COR-certified, we take the safety of our team and everyone we share a site with very seriously.</p>
+      <p>With a thriving construction industry at our backs, our team is growing and we want to find people to grow with us. Our utility locators are all provided paid on-the-job training in a structured and comprehensive manner. We train our locators to handle any technically challenging locate they may be presented with.</p>
+      <p>We are looking for people who want a true career, not just a job.</p>
+      <h2>Duties</h2>
+      <x-include src="{{duties}}">
+      <h2>Applicant requirements</h2>
+      <ul>
+        <li>Able to work full time</li>
+        <li>Able to pass a drug prescreening test and 50 lb fit for duty test</li>
+        <li>Able to read, or learn to read, technical drawings and plans</li>
+        <li>Forward thinkers able to take the initiative and solve technical challenges</li>
+        <li>Must be weather resilient, we work rain or shine</li>
+        <li>Valid BC driver's licence</li>
+        <li>Previous utility locate experience a plus. Looking for 5+ years experience</li>
+        <li>Archaeological, construction, geophysical or geology industry experience a plus</li>
+      </ul>
+      <h2>Compensation</h2>
+      <ul>
+        <li>Extended medical, dental</li>
+        <li>RRSP matching program</li>
+        <li>Top industry wages</li>
+        <li>Unionized workplace</li>
+        <li>Fully paid training and certifications</li>
+        <li>Comprehensive training</li>
+        <li>Annual boot allowance</li>
+      </ul>
+    </div>
+    <form class="form" action="{{formAction}}" method="POST" enctype="multipart/form-data" data-form data-next="/application-received"{{formDemo}} aria-labelledby="apply-title">
+      <h2 id="apply-title">Submit your application</h2>
+      <p class="required-key">Fields marked * are required.</p>
+      <input type="hidden" name="form" value="Application: {{h1}}">
+      <x-include src="form-hidden" fid="ap">
+      <div class="field">
+        <label for="ap-name">Name <span aria-hidden="true">*</span></label>
+        <input type="text" id="ap-name" name="name" autocomplete="name" enterkeyhint="next" required data-error="ap-name-error">
+        <p id="ap-name-error" class="error-msg">Error: enter your name.</p>
+      </div>
+      <div class="field">
+        <label for="ap-email">Email <span aria-hidden="true">*</span></label>
+        <input type="email" id="ap-email" name="email" inputmode="email" autocomplete="email" autocapitalize="none" spellcheck="false" enterkeyhint="next" required data-error="ap-email-error">
+        <p id="ap-email-error" class="error-msg">Error: enter an email address like name@example.com.</p>
+      </div>
+      <div class="field">
+        <label for="ap-phone">Phone <span aria-hidden="true">*</span></label>
+        <input type="tel" id="ap-phone" name="phone" autocomplete="tel" enterkeyhint="next" required data-error="ap-phone-error">
+        <p id="ap-phone-error" class="error-msg">Error: enter a phone number we can reach you at.</p>
+      </div>
+      <div class="field">
+        <label for="ap-about">Tell us about yourself and why you are interested in this position <span aria-hidden="true">*</span></label>
+        <textarea id="ap-about" name="about" required data-error="ap-about-error"></textarea>
+        <p id="ap-about-error" class="error-msg">Error: tell us a little about yourself.</p>
+      </div>
+      <div class="field">
+        <label for="ap-resume">Attach your resume <span aria-hidden="true">*</span></label>
+        <input type="file" id="ap-resume" name="resume" required data-error="ap-resume-error">
+        <p id="ap-resume-error" class="error-msg">Error: attach your resume.</p>
+      </div>
+      <fieldset>
+        <legend>How did you hear about this position? <span aria-hidden="true">*</span></legend>
+        <label class="choice"><input type="radio" name="heard_from" value="quadralocating.com" required data-error="ap-heard-error"> Navigating quadralocating.com</label>
+        <label class="choice"><input type="radio" name="heard_from" value="Referral" required> Referral</label>
+        <label class="choice"><input type="radio" name="heard_from" value="Indeed" required> Indeed</label>
+        <label class="choice"><input type="radio" name="heard_from" value="Google search" required> Google search</label>
+        <label class="choice"><input type="radio" name="heard_from" value="Other" required> Other</label>
+        <p id="ap-heard-error" class="error-msg">Error: choose one option.</p>
+      </fieldset>
+      <button class="btn btn-primary" type="submit">Submit application</button>
+      <p class="hint">Questions? Email <a href="mailto:{{site.careersEmail}}">{{site.careersEmail}}</a>.</p>
+    </form>
+  </div>
+</section>
