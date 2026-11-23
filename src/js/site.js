@@ -18,11 +18,11 @@
 
   if (header && inner && menu && menuButton) {
     let lastWidth = 0;
-    const layoutNav = () => {
+    const layoutNav = (force) => {
       const width = header.clientWidth;
       const isWide = header.classList.contains('is-wide');
-      // While collapsed, only re-measure when the header has grown.
-      if (!isWide && lastWidth && width <= lastWidth) { lastWidth = width; return; }
+      // While collapsed, only re-measure when the header has grown (or when forced).
+      if (force !== true && !isWide && lastWidth && width <= lastWidth) { lastWidth = width; return; }
       lastWidth = width;
       const wasOpen = !isWide && hasPopover && menu.matches(':popover-open');
       header.classList.add('is-measuring', 'is-wide');
@@ -51,10 +51,13 @@
         menu.hidden = !open;
       });
     }
-    const ro = new ResizeObserver(layoutNav);
+    const ro = new ResizeObserver(() => layoutNav());
     ro.observe(header);
     ro.observe(menu);
-    layoutNav();
+    layoutNav(true);
+    // The first measure can run before the web fonts and logo arrive. Measure again once they have.
+    doc.fonts?.ready.then(() => layoutNav(true));
+    addEventListener('load', () => layoutNav(true));
   }
 
   /* ---------------------------------------------------------------
